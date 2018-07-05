@@ -1,0 +1,31 @@
+html
+    head
+        title Attributes
+    body
+        input(
+        type='checkbox'
+        name='agreement'
+        checked
+        )
+        .container-fluid
+        h1
+            |How to add the default value
+            br
+            |to textarea by Jade.
+        form(action="").form-inline
+            .form-group.col-md-4
+            h2 pipe
+            textarea(rows=3).form-control
+                | hoge
+                | fuga
+                | piyo
+            .form-group.col-md-4
+            h2 dot
+            textarea(rows=3).form-control.
+                hoge
+                fuga
+                piyo
+            .form-group.col-md-4
+            h2 variable
+            - var text = "hoge\npiyo\nfuga"
+            textarea(rows=3).form-control= text

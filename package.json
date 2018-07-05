@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/papasmf/javascript#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "htmlparser2": "^3.9.2",
+    "pug": "^2.0.3"
   }
 }

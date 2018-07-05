@@ -1,0 +1,19 @@
+html
+    head
+        title Translate
+        meta(charset='utf-8')
+    body
+       h1 Translate
+       ul
+       div= var1
+       form(action='/translate' method='post').form-inline
+            .form-group.col-md-4
+            h2 Input
+            textarea(name='inputtext' rows=3).form-control
+            .form-group.col-md-4
+            p
+                input(type='submit')
+            h2 Output
+            - var text = var2
+            textarea(rows=3).form-control= text
+            .form-group.col-md-4
